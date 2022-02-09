@@ -1,0 +1,14 @@
+{
+    "app":{
+        "cfengine":"Adobe@2021"
+    },
+    "web":{
+        "http":{
+            "port":"2020"
+        }
+    },
+    "jvm":{
+        "heapSize":512
+    },
+    "name":"cfspecialist"
+}
