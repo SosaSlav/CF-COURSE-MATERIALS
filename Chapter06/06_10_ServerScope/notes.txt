@@ -1,0 +1,2 @@
+The server scope
+        - contains data of all the applications running on a server (they all share the same scope)

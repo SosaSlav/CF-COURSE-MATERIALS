@@ -1,0 +1,21 @@
+The web is a stateless function, meaning each request is a
+UNIQUE transaction. We cannot pass data from one request to the next.
+ColdFusion gets around this by using persistent scopes
+
+- Persistent scopes persist across requests
+
+The application scope is available throughout the entire application
+It is activated by setting the application name in the .cfc file
+
+The Application scope
+    - is seen across entire Application
+    - every single file in the app has access to the same application scope
+    - the application scope persists across requests
+
+If both applications have the same name; 
+- they share the same scope, so use unique names always
+
+The application timeout:
+- The application scope is populated when the first request hits the application
+- The scope is discarded, when the timeout is reached
+- default timeout can be set in the CF Admin

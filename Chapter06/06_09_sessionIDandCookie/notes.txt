@@ -1,0 +1,10 @@
+cookies
+    - text files saved on the client browser
+    - cookies are client variables because they are managed by the browser
+(NOT THE CF SERVER)
+
+Finding the Session scope
+- when a request hits the cf SERVER
+    - CF checks for the CFID and the CFTOKEN cookies in the incoming request
+        - If yes: CF uses the value of the CFID and the CFTOKEN cookies to match the request with an existing session
+        - If no: CF generates a new session and saves the session identifiers as cookies on the client browser, so this data is available on the next request from that browser

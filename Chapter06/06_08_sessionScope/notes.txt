@@ -1,0 +1,6 @@
+The session scope
+- is specific to the user session
+- so all users share the same application scope, but each user has its own session scope
+
+if you use a different browser, a new session is created
+sessions are great places to store login info, items in cart, etc!
